@@ -19,7 +19,7 @@ body{
     max-width: 1000px;
 }
 
-.menuBar{
+#menuBar{
     background-color: #0e56bd75;
     border-bottom: solid 0.104em #7198C1;
     box-shadow: 0 0 0.8333em rgb(0 0 0 / 40%);
@@ -34,6 +34,11 @@ body{
 .navBarItems{
     display:flex;
     position: relative;
+}
+
+.navBarItems:hover {
+    color: blue;
+    cursor: pointer;
 }
 
 .footer{
