@@ -1,7 +1,20 @@
 const container= document.querySelector("#div2");
 const header = document.createElement("span");
 header.textContent="List of users";
-container.appendChild(header)
+container.appendChild(header);
+
+const navBar =document.querySelector("#menuBar");
+const h4= document.createElement("h4");
+h4.textContent = "#CodeWithNellySugu";
+
+navBar.appendChild(h4)
+
+const navBarItem = document.createElement("div");
+navBarItem.setAttribute("class","navBarItems")
+navBarItem.addEventListener("click", (e)=>{
+    e.preventDefault();
+    window.location.reload();
+})
 
 const postsContainer= document.querySelector("#div3")
 const loading = document.querySelector('.loading')
@@ -69,6 +82,8 @@ const renderUser = (doc) =>{
             .then(data => {
               data.map(post=>{
                   displayUserPosts(post);
+                  navBarItem.textContent= "<<Back to users";
+                  navBar.appendChild(navBarItem)
                   document.querySelector('.loading').style.display = 'none'
               })
             }).catch(error => {
@@ -84,6 +99,8 @@ fetch("https://jsonplaceholder.typicode.com/users",{
     .then(data=>{
         data.map(user =>{
             renderUser(user)
+            navBarItem.textContent = "Users";
+            navBar.appendChild(navBarItem)
             document.querySelector('.loading').style.display = 'none'
         })
     }).catch(error => {

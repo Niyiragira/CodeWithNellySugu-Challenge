@@ -22,7 +22,7 @@ Clone the repository on your local computer using the command below
 
 # Deployment 🚀
 
-[GutHub Pages]()
+[GutHub Pages](https://niyiragira.github.io/CodeWithNellySugu-Challenge/)
 
 ---
 
