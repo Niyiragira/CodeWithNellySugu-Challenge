@@ -1,0 +1,30 @@
+#div3{
+    margin: 0px auto;
+    display: inline-block;
+    color: black;
+    background: #fff;
+    max-width: 960px;
+    padding:  20px 30px;    
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1) 
+}
+
+.title{
+    font-weight: bold;
+    color: blue;
+}
+
+.postBody{
+    font-family: Roboto;
+    color: black;
+}
+
+.post {
+    display: inline-block;
+    color: black;
+    background: #fff;
+    max-width: 1060px;
+    margin: 30px auto;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 13px 14px 15px black;
+}
